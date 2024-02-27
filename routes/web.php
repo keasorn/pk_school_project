@@ -37,4 +37,15 @@ Route::get('/products/{id}', function ($id) {
     return view('service.product', compact('product'));
 });
 
+Route::get('/', function () {
+    return view('front_end.home');
+});
+
+Route::get('/about', function () {
+    return view(' front_end.about');
+});
+
+Route::get('/contact', function () {
+    return view(' front_end.contact');
+});
 
